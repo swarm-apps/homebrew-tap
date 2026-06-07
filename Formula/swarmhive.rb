@@ -1,25 +1,25 @@
 class Swarmhive < Formula
   desc "SwarmHive CLI: local + CI/CD release entrypoint."
   homepage "https://github.com/swarm-apps/swarmhive"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/v0.1.0/swarmhive-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "cfb16c9fe8be97bc715324167833822138f2b3534fbbfc1d7461244a517c3832"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.2.0/swarmhive-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "6adfa8ee10dea46b8c1bb1de7cb6bfb34d85184647b35a014ce484a03b7c67de"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/v0.1.0/swarmhive-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "66cccbebe2ac3ba697085f70273f89371891e765647dbe728f94b8c65901522e"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.2.0/swarmhive-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a0cdf354694bac7d716062cbb0a7286d554bd478aa4318da53d348482c21890e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/v0.1.0/swarmhive-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ff03ae28e019a5a2ae990aa684ae51dffcb8f3e9a85e51df4cdedcbbed58200b"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.2.0/swarmhive-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0c10e2bd3ac88fac1ced1686f6faaa5a6b23042047608b0a58970616096d99cd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/v0.1.0/swarmhive-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "eec6c57bbfb7c2c7b1fc1ff079621a554a8c312e760c0c06118382ac2825417f"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.2.0/swarmhive-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3729a8cc9bfe243246ac1a3ad09d95543b8e07c0e7fa15faf7e36effd7b01799"
     end
   end
   license "Apache-2.0"
