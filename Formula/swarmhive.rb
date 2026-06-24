@@ -1,25 +1,25 @@
 class Swarmhive < Formula
   desc "SwarmHive CLI: local + CI/CD release entrypoint."
   homepage "https://github.com/swarm-apps/swarmhive"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.5.0/swarmhive-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "42c33c40308f789b64455ae2ad820bac9f036c69febfc9a9e6a0088b9f3fa8e0"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.6.0/swarmhive-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ffda09dabe520390bc76e4ec7e09231c7c055537e0a0bebf8d063300013e1d31"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.5.0/swarmhive-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "d02cbd33a4bdd3e148c079957dfc900a7320e8256909f8e6b2ff9fcaffa305b1"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.6.0/swarmhive-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "1925e5133dd24155eaac657dbecebe73de75c21a9f23b4e391a16e63fdd1c5e0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.5.0/swarmhive-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2591cd17dead15dc9eddabea439287cb257b62e97c6ac675125d614343e90f08"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.6.0/swarmhive-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b092d906329380e049ba87e3a4c10d48aa01c6bf9e95794139efa269578752d8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.5.0/swarmhive-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2d8e068c6c90725a910541ec8c9b5ee2d54d548a1dea36fa69ce2f1a81943f96"
+      url "https://github.com/swarm-apps/swarmhive/releases/download/cli/v0.6.0/swarmhive-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "127d4f26ad0e264bab7c03eea7bd3f9ef0780175bafc278751122c8b80a43651"
     end
   end
   license "Apache-2.0"
