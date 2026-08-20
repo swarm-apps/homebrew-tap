@@ -1,25 +1,25 @@
 class Swarmdrop < Formula
   desc "SwarmDrop 命令行宿主：无账号、无公网 IP 的设备间端到端加密传输"
   homepage "https://github.com/swarm-apps/SwarmDrop"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/v0.1.0/swarmdrop-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "8e3caf6924108f6dad8ec09b8835af18e110dc01ef6aa86ee8cf286408dc6b53"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.2.0/swarmdrop-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "532c02e3ac732517c525a7ef12f662f9da1d6a743b1dd9db67b9985bcc61868e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/v0.1.0/swarmdrop-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "29f52e3f5dd1ec51fd3d1e367198c5cd4c32f63771aaa4547c999ba5d0f73752"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.2.0/swarmdrop-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "d5839af2318dc9c25ddfcbf02784175f7495a6bf3a377d80f24b67d162c94093"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/v0.1.0/swarmdrop-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "dfa8ea5a56f71ad1be3bd60087ccf05ea8d96e80a05d04571a124e790232c886"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.2.0/swarmdrop-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "722f1d7f0f07fa1b7a04c77ca84bc0bc92ef452e3298cecfb1efb90cc94de188"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/v0.1.0/swarmdrop-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ba07bb64e69abbbf4608e5d02e521dbdccf19daf452a097f3216f51872d24841"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.2.0/swarmdrop-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ce4076483a19f49483f2b13c1898b87495f947b44367dfed345fc58c32e1a470"
     end
   end
   license "MIT"
