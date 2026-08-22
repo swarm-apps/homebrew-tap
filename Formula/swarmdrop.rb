@@ -1,25 +1,25 @@
 class Swarmdrop < Formula
   desc "SwarmDrop 命令行宿主：无账号、无公网 IP 的设备间端到端加密传输"
   homepage "https://github.com/swarm-apps/SwarmDrop"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.8.0/swarmdrop-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "2931710c96c95355dad4575d22df44351a60ea65769106ddece8c042cba6fbd3"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.9.0/swarmdrop-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "17503b94bf9defb22c0ccc943169b0013204b7733b7cd36e5b8a71f38dea92e4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.8.0/swarmdrop-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "64278b261e85ce2c16849ece563ee28f69c20cc0e6fcccc7c01863ce524c6d94"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.9.0/swarmdrop-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "386ea536c0aa36e3ef1e87efafce03b662b55cc05774d1035271b55dcf75d0b6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.8.0/swarmdrop-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9c73efbbd87e83d6ac32dde20d32505ebd23f22ba014223d4394d325338e9672"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.9.0/swarmdrop-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ecc44fd1adfe5f3e60d19d7ed720862a724d95f8f787a13d923106d95bbf9ae2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.8.0/swarmdrop-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7bd358dafd060f75ea1e770866aba2357f40378813a37925380ecf099bb6cdfd"
+      url "https://github.com/swarm-apps/SwarmDrop/releases/download/cli/swarmdrop-cli-v0.9.0/swarmdrop-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d14ff39a0f37393eca3ef45ce88c9a843ee8c81a2fb6137af1f7466d01c7ff86"
     end
   end
   license "MIT"
